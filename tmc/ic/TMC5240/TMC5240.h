@@ -91,6 +91,7 @@ static inline void tmc5240_fieldWrite(uint16_t icID, RegisterField field, uint32
 /**************************************************************** DEFAULT REGISTER VALUES *************************************************************************/
 
 // Default Register values
+<<<<<<< HEAD
 #define R00 0x00000008  // GCONF
 #define R0A 0x00000020  // DRVCONF
 #define R10 0x00070A03  // IHOLD_IRUN
@@ -113,6 +114,33 @@ static inline void tmc5240_fieldWrite(uint16_t icID, RegisterField field, uint32
 #define R6C 0x00410153  // CHOPCONF
 #define R70 0xC44C001E  // PWMCONF
 #define R74 0x00000000  // PWMCONF
+=======
+#define R00 ((int32_t)0x00000008)  // GCONF
+#define R0A ((int32_t)0x00000020)  // DRVCONF
+#define R10 ((int32_t)0x00070A03)  // IHOLD_IRUN
+#define R11 ((int32_t)0x0000000A)  // TPOWERDOWN
+#define R2A ((int32_t)0x0000000A)  // D1
+#define R2B ((int32_t)0x0000000A)  // VSTOP
+#define R30 ((int32_t)0x0000000A)  // D2
+
+#define R3A ((int32_t)0x00010000)  // ENC_CONST
+
+#define R52 ((int32_t)0x0B920F25)  // OTW_OV_VTH
+#define R60 ((int32_t)0xAAAAB554)  // MSLUT[0]
+#define R61 ((int32_t)0x4A9554AA)  // MSLUT[1]
+#define R62 ((int32_t)0x24492929)  // MSLUT[2]
+#define R63 ((int32_t)0x10104222)  // MSLUT[3]
+#define R64 ((int32_t)0xFBFFFFFF)  // MSLUT[4]
+#define R65 ((int32_t)0xB5BB777D)  // MSLUT[5]
+#define R66 ((int32_t)0x49295556)  // MSLUT[6]
+#define R67 ((int32_t)0x00404222)  // MSLUT[7]
+#define R68 ((int32_t)0xFFFF8056)  // MSLUT[8]
+#define R69 ((int32_t)0x00F70000)  // MSLUT[9]
+
+#define R6C ((int32_t)0x00410153)  // CHOPCONF
+#define R70 ((int32_t)0xC44C001E)  // PWMCONF
+#define R74 ((int32_t)0x00000000)  // PWMCONF
+>>>>>>> 7a03fd4 (initialized as platformio library; explicit types for value definitions for some drivers)
 
 #define ____ 0x00
 #define N_A 0x00
