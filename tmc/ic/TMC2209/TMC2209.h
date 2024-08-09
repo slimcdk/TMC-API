@@ -118,11 +118,11 @@ typedef enum {
 #define TMC2209_IS_READABLE(x)    ((x) & TMC2209_ACCESS_READ)
 
 // Default Register values
-#define R00 0x00000040  // GCONF
-#define R10 0x00071703  // IHOLD_IRUN
-#define R11 0x00000014  // TPOWERDOWN
-#define R6C 0x10000053  // CHOPCONF
-#define R70 0xC10D0024  // PWMCONF
+#define R00 ((int32_t)0x00000040)  // GCONF
+#define R10 ((int32_t)0x00071703)  // IHOLD_IRUN
+#define R11 ((int32_t)0x00000014)  // TPOWERDOWN
+#define R6C ((int32_t)0x10000053)  // CHOPCONF
+#define R70 ((int32_t)0xC10D0024)  // PWMCONF
 
 #define ____ 0x00
 
