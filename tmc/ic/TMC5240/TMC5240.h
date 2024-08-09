@@ -40,31 +40,31 @@ typedef struct
 typedef void (*tmc5240_callback)(TMC5240TypeDef*, ConfigState);
 
 // Default Register values
-#define R00 0x00000008  // GCONF
-#define R0A 0x00000020  // DRVCONF
-#define R10 0x00070A03  // IHOLD_IRUN
-#define R11 0x0000000A  // TPOWERDOWN
-#define R2A 0x0000000A  // D1
-#define R2B 0x0000000A  // VSTOP
-#define R30 0x0000000A  // D2
+#define R00 ((int32_t)0x00000008)  // GCONF
+#define R0A ((int32_t)0x00000020)  // DRVCONF
+#define R10 ((int32_t)0x00070A03)  // IHOLD_IRUN
+#define R11 ((int32_t)0x0000000A)  // TPOWERDOWN
+#define R2A ((int32_t)0x0000000A)  // D1
+#define R2B ((int32_t)0x0000000A)  // VSTOP
+#define R30 ((int32_t)0x0000000A)  // D2
 
-#define R3A 0x00010000  // ENC_CONST
+#define R3A ((int32_t)0x00010000)  // ENC_CONST
 
-#define R52 0x0B920F25  // OTW_OV_VTH
-#define R60 0xAAAAB554  // MSLUT[0]
-#define R61 0x4A9554AA  // MSLUT[1]
-#define R62 0x24492929  // MSLUT[2]
-#define R63 0x10104222  // MSLUT[3]
-#define R64 0xFBFFFFFF  // MSLUT[4]
-#define R65 0xB5BB777D  // MSLUT[5]
-#define R66 0x49295556  // MSLUT[6]
-#define R67 0x00404222  // MSLUT[7]
-#define R68 0xFFFF8056  // MSLUT[8]
-#define R69 0x00F70000  // MSLUT[9]
+#define R52 ((int32_t)0x0B920F25)  // OTW_OV_VTH
+#define R60 ((int32_t)0xAAAAB554)  // MSLUT[0]
+#define R61 ((int32_t)0x4A9554AA)  // MSLUT[1]
+#define R62 ((int32_t)0x24492929)  // MSLUT[2]
+#define R63 ((int32_t)0x10104222)  // MSLUT[3]
+#define R64 ((int32_t)0xFBFFFFFF)  // MSLUT[4]
+#define R65 ((int32_t)0xB5BB777D)  // MSLUT[5]
+#define R66 ((int32_t)0x49295556)  // MSLUT[6]
+#define R67 ((int32_t)0x00404222)  // MSLUT[7]
+#define R68 ((int32_t)0xFFFF8056)  // MSLUT[8]
+#define R69 ((int32_t)0x00F70000)  // MSLUT[9]
 
-#define R6C 0x00410153  // CHOPCONF
-#define R70 0xC44C001E  // PWMCONF
-#define R74 0x00000000  // PWMCONF
+#define R6C ((int32_t)0x00410153)  // CHOPCONF
+#define R70 ((int32_t)0xC44C001E)  // PWMCONF
+#define R74 ((int32_t)0x00000000)  // PWMCONF
 
 static const int32_t tmc5240_defaultRegisterResetState[TMC5240_REGISTER_COUNT] =
 {
