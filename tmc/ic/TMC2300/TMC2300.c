@@ -226,7 +226,7 @@ void writeRegisterUART(uint16_t icID, uint8_t registerAddress, int32_t value)
     tmc2300_readWriteUART(icID, &data[0], 8, 0);
 
     //Cache the registers with write-only access
-    tmc2300_cache(icID, TMC2300_CACHE_WRITE, registerAddress, &value);
+    tmc2300_cache(icID, TMC2300_CACHE_WRITE, registerAddress, (uint32_t *) &value);
 
 }
 
